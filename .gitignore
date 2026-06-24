@@ -9,6 +9,13 @@
 *.fst
 *.ghw
 
+# Quartus ignore files
+db/
+*.qpf
+*.qsf
+*.qws
+*.sci
+
 # OS generated temporary files
 .DS_Store
 Thumbs.db
