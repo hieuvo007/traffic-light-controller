@@ -5,13 +5,13 @@ module traffic_light_controller (
     
     // Vertical traffic lights 
     output reg red_v, 
-    output reg yellow_v, 
-    output reg green_v, 
+    output reg yellow_v,
+    output reg green_v,
     
     // Horizontal traffic lights 
-    output reg red_h, 
-    output reg yellow_h, 
-    output reg green_h  
+    output reg red_h,
+    output reg yellow_h,
+    output reg green_h
 );
 
     // STEP 2: STATE ENCODING & MEMORY ALLOCATION
@@ -28,7 +28,7 @@ module traffic_light_controller (
         if (rst) begin
             // Asynchronous reset: Initialize to default safe state
             state <= S0;
-            counter <= 10; 
+            counter <= 10;
         end else begin
             if (counter > 0) begin
                 // Decrement the timer at each clock cycle
